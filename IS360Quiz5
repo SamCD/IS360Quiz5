@@ -1,0 +1,41 @@
+Reading Quiz: “Tidy Data”
+1. Data Tidying is what Hadley Wickham calls structuring datasets to facilitate analysis.
+
+2. In tidy data, there are three properties. One of these properties states that “each type of 
+observational unit forms a table.” What are the other two properties of tidy data.
+1) Each variable forms a column
+2) Each observation forms a row
+
+
+3. According to Hadley Wickham, what are the five most common problems with messy datasets?
+1) Column headers are values, not variable names
+2) multiple variables are stored in one column
+3) variables are stored in both rows and columns
+4) multiple types of observational units are stored in the same table
+5) a single observational unit is stored in multiple tables
+
+4. Provide a one sentence definition for each of the four fundamental verbs of data manipulation:
+a. Filter - To subset or removing observations from a set based on some condition
+b. Transform - To add or modify variables, involving either a single variable or multiple variables
+c. Aggregate - To collapse multiple values into a single value
+d. Sort - To change the order of observations
+
+5. What is the function in base R used for filtering? 
+The subset() function is one way to filter data, and he also mentions the transform() function
+
+Reading Quiz: “Introduction to dplyr”
+1. What are the advantages and disadvantages of using the dplyr package versus the plyr package?
++ Dplyr is much faster
++ Provides a better thought out set of joins
+- Only provides tools for working with data frames
+
+2. What are the advantages and disadvantage of using plyr versus the base R apply family of 
+functions?
++ Much more consistent and functions have the same interface, so it is easier to master many
+- Centered around data frames, does not work with vectors
+
+Reading Quiz: “tidyr”
+1. What are the two verbs (functions) in the tidyr package that correspond to the spreadsheet 
+functions pivot and unpivot?
+pivot is gather()
+unpivotr is spread()
